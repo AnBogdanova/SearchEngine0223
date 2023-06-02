@@ -17,8 +17,13 @@ public class ApiController {
         this.statisticsService = statisticsService;
     }
 
+
     @GetMapping("/statistics")
     public ResponseEntity<StatisticsResponse> statistics() {
         return ResponseEntity.ok(statisticsService.getStatistics());
     }
+
+
+
+
 }
